@@ -16,11 +16,11 @@ COPY ./requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
 
 # make directory in our docker image in which we can use to store our source code
-RUN mkdir /app
-WORKDIR /app
+RUN mkdir /proj
+WORKDIR /proj
 
-# Copies from our local machine the app folder to the app folder in the docker image
-COPY ./app /app
+# Copies from our local machine the proj folder to the proj folder in the docker image
+COPY ./proj /proj
 
 # Create user that can run our image on docker
 RUN adduser -D user
