@@ -2,7 +2,7 @@
 version: "3"
 
 services:
-  app:
+  proj:
     build:
       context: .
   #     map port on local machine to port on docker image
