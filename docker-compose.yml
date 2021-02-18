@@ -5,7 +5,7 @@ services:
   app:
     build:
       context: .
-  #     map port on local machine to port on docker image
+    # map port on local machine to port on docker image
 
     ports:
       - "8000:8000"
